@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio David Cabrera</title>
+    <title>Portfolio David Cabrera</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-     <header>     
-     <div class="logo">Portafolio David Cabrera</div>
-     <nav>
-      <a href="pagina1.html">Página 1</a>
-      <a href="#Proyectos">Página 2</a>
-     </nav>
+  <header>     
+     <div>
+      <h1>Hi, I'm David!</h1>
+     </div>
   </header>
+<div class="article-container">
+  <div class="imagenes-inferiores">
+        <a href="https://diprimm.itch.io/" target="_blank"> <img src="itch_icon.png" alt="Imagen itch"> </a>
+        <a href="" target="_blank"> <img src="https://blog.waalaxy.com/wp-content/uploads/2021/01/3-1.png" alt="Imagen 2"> </a>
+  </div>
+</div>
 
+<p class="parrafos">
+  Hello!,  I'm David Cabrera. I'm a VR Engeneering & Game Design student especializing in PC games. My work lives at the intersection of programming and aesthetics, from coding game mechanics to creating
+  3D/pixel-art game assets, better I should say: A generalist.
+</p>
+
+
+<!--
+      
 
  <div class="contenedor">
     <div class="izquierda">
@@ -25,31 +37,42 @@
     <div class="derecha">
       <div class="parrafos">
         <p>David Cabrera</p>
-        <p>Desarrollador Unity</p>
-        <p>Especializado en juegos de PC</p>
+        <p>Unity developer</p>
+        <p>Specialized in PC games</p>
       </div>
       <div class="imagenes-inferiores">
         <a href="https://diprimm.itch.io/" target="_blank"> <img src="itch_icon.png" alt="Imagen itch"> </a>
-        <a href="https://www.youtube.com/shorts/16uJ-jxcKHo" target="_blank"> <img src="https://blog.waalaxy.com/wp-content/uploads/2021/01/3-1.png" alt="Imagen 2"> </a>
+        <a href="" target="_blank"> <img src="https://blog.waalaxy.com/wp-content/uploads/2021/01/3-1.png" alt="Imagen 2"> </a>
       </div>
     </div>
   </div>
 
+  -->
+
   <main>
+  <section class="Projects">
+    <h1 class="title">Projects I worked on</h1>
+
     <section class="container">
       <div class="perfil">
-        <img src="arrow_icon.png"   alt="Tarjeta de juego Arrow" />
+        <img src="ArrowBANNER.png"   alt="Tarjeta de juego Arrow" />
         <h3>Arrow</h3>
+        <p>
+          Arrow is a simple game of reflexes and coordination. Hit the pattern in the corresponding order to gain points, be aware! sounds easy
+          but it can get caotic.
+        </p>
         <p>Role: Solo Dev</p>
         <a href="https://diprimm.itch.io/arrow">
           <button>View in Itch.io</button>
         </a>       
       </div>   
     </section>
+
+  </section>
   </main>
 
   <section id="experience">
-    <h1 class="title">Knowledge</h1>
+    <h1 class="title">My Knowledge</h1>
     <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container">
@@ -73,21 +96,21 @@
               <img src="PS_icon.png" alt="experience icon" class="icon" />
               <div>
                 <h3>Photoshop</h3>
-                <P>Principiante</P>
+                <P>Intermedio</P>
               </div>
             </article>
             <article>
               <img src="blockbench_icon.png" alt="experience icon" class="icon" />
               <div>
                 <h3>Blockbench</h3>
-                <P>Intermedio</P>
+                <P>Principiante</P>
               </div>
             </article>
             <article>
               <img src="aseprite_icon.png" alt="experience icon" class="icon" />
               <div>
                 <h3>Aseprite</h3>
-                <P>Intermedio</P>
+                <P>Principiante</P>
               </div>
             </article>
                      
@@ -98,37 +121,100 @@
   </section>
 
   <section>
-    <h1 class="title">Showcase</h1>
-    
-    <div> 
-      <h2 class="subtitle">Games</h2>
-      <div class="contenedor-imagen">
-       <img src="arrow_icon.png" alt="experience icon"/>
-       <img src="ArrowFotogramaIMG1.jpg" alt="experience icon"/>     
-       <img src="ArrowFotogramaIMG4.jpg" alt="experience icon"/>
-      </div>     
-            
+    <h1 class="title">Showcase</h1>           
  
-      <h2 class="subtitle">Assets</h2>
+      <h2 class="subtitle">Asset Gallery</h2>
+
+      <div class="galeria-showcase">
+
+        <div class="contenedor-imagen">
+          <img src="Timer.gif" alt="game asset"/>
+          <p>Timer for Arrow Game</p> 
+        </div>  
+      
+
+
+        <div class="contenedor-imagen">
+          <img src="star.gif" alt="game asset"/>
+          <p>Star Asser for Arrow game</p> 
+        </div>  
+
+
+
+       <div class="contenedor-imagen">
+         <img src="lighter.gif" alt="lighter 2d animation"/>
+         <p>Lighter 2D pixel-art animation</p> 
+        </div>
+
+
       <div class="contenedor-imagen">
-       <img src="" alt="experience icon"/>
+         <img src="archer.gif" alt="archer 2d animation"/>
+         <p>Archer 2D pixel-art animation</p> 
+      </div>
+
       </div>
       
 
-      <h2 class="subtitle">3D Models</h2>
-      <div class="contenedor-imagen">
-       <img src="mandalorian.png" alt="experience icon"/>
-       <img src="arcade.png" alt="experience icon"/>     
-       <img src="energysword.png" alt="experience icon"/>
-       <img src="calabaza.png" alt="experience icon"/>
+      <h2 class="subtitle">3D Gallery</h2>
+
+      <div class="galeria-showcase">
+        
+       <div class="contenedor-imagen">
+        <img src="mandalorian.png" alt="helmet render"/>
+        <p>Mandalorian helmet 3D model</p>
+        <div class="extra-images">
+          <img src="MandPr.png" alt="Process image">
+          </div> 
+       </div>
+
+       <div class="contenedor-imagen">
+        <img src="arcade.png" alt="arcade room"/>
+        <p>Arcade room 3D model</p>
+       </div>
+
+       <div class="contenedor-imagen">
+        <img src="yagerrender.png" alt="experience icon"/>
+        <p>Arcade room 3D model</p>
+          <div class="extra-images">
+          <img src="yagerWireframe.png" alt="mask wireframe">
+          </div> 
+       </div>
+        
+       <div class="contenedor-imagen">
+         <img src="energysword.png" alt="energy sword render"/>
+         <p>Halo energy sword 3D model</p> 
+       </div> 
+           
+       <div class="contenedor-imagen">
+        <img src="calabaza.png" alt="pumpkin render"/>
+        <p>Pumpkin 3D model</p> 
+       </div>
+
+        <div class="contenedor-imagen">
+        <img src="chibi_practice.png" alt="3d practice"/>
+        <p>Character armature practice</p>
+       </div>
+
+        <div class="contenedor-imagen">
+        <img src="doom_diorama.png" alt="doom diorama"/>
+        <p>Doom diorama 3D model</p> 
+       </div>
+
+       <div class="contenedor-imagen">
+        <img src="NauticRender1.png" alt="nautic"/>
+        <p>Diver</p>
+        
+        <div class="extra-images">
+          <img src="NauticGif.gif" alt="nautic gif">
+          <img src="Wireframe.png" alt="nautic wireframe">
+          
+        </div>
+
+       </div>
+
       </div>
 
-      <h2 class="subtitle">Extras</h2>
-      <div class="contenedor-imagen">
-       <img src="lighter.gif" alt="experience icon"/>
-      </div>
-
-    </div>
+    
 
   </section>
 

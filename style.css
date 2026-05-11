@@ -2,23 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Arial';
 }
 
 body {
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(20, 20, 20);
 }
 
 header {
   width: 100%;
   padding: 20px;
-  background: cornflowerblue;
+  background: rgb(78, 129, 233);
   color: rgb(255, 255, 255);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+section{
+  padding: 60px 20px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -30,15 +39,19 @@ header {
 
 
 .perfil {
- background: #53686b;
+ background: #232323;
  color: azure; 
  border-radius: 15px;
 
  box-shadow: 10px 40px 12px rgba(145, 19, 19, 0.221);
  padding: 20px;
  text-align: center;
- width: 250px;
+ width: 550px;
  transition: transform 10s ease, box-shadow 0.2s ease;
+}
+
+.perfil p{
+  padding: 15px;
 }
 
 .perfil:hover {
@@ -48,8 +61,8 @@ header {
  box-shadow: 0 6px 18px rgb(255, 5, 5);
 }
 .perfil img {
- width: 200px;
- height: 200px;
+ width: 510px;
+ height: 220px;
  border-radius: 15px;
  object-fit: cover;
  margin-bottom: 10px;
@@ -104,9 +117,11 @@ header {
 
 .subtitle{
   color: rgb(220, 220, 220);
-  font-weight: 360;
+  font-weight: 500;
   font-size: 2rem;
   margin-bottom: 2rem;
+  text-align: center;
+  padding: 30px;
 }
 
 .botones button {
@@ -197,25 +212,96 @@ section {
   color: azure;
   font-size: 3rem;
   text-align: center;
+  padding: 40px;
+}
+
+.galeria-showcase{
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
 }
 
 .contenedor-imagen{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .contenedor-imagen img{
-  width: 100%; 
-  height: 270px;
-  object-fit: contain;
+  width: 100%;
+  max-width: 300px; 
+  height: 300px;
+  object-fit: cover;
   border-radius: 8px; 
+  display: block;
+}
+
+.contenedor-imagen p{
+  padding: 15px;
+  margin: 0;
+  background: rgb(40, 40, 40);
+  color: azure;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
 }
 
 .item {
   background-color: #ddd;
   border: 1px solid #333;
   padding: 20px;
+}
+
+.parrafos{
+  padding: 20px 200px;
+  text-align: center;
+  color: rgb(220, 220, 220);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.projects{
+  background-color: rgb(153, 63, 63);
+}
+
+.extra-images {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  pointer-events: none;
+  display: flex;
+  gap: 0;
+  max-width: 0; /* Ocultas por defecto */
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.extra-images img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+
+.contenedor-imagen:hover {
+  z-index: 99; /* Hace que el item actual flote sobre los vecinos del grid */
+}
+
+/* Efecto al pasar el mouse por el CONTENEDOR */
+.contenedor-imagen:hover .extra-images {
+  max-width: 600px; /* Un valor lo suficientemente grande para mostrar todas */
+  opacity: 1;
+  gap: 10px; /* Espacio entre las fotos que aparecen */
+  margin-left: 15px;
+}
+
+.contenedor-imagen:hover {
+  gap: 10px;
 }
 
 
