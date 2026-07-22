@@ -1,231 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio David Cabrera</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Cabrera — Game Designer Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
 </head>
-
-
 <body>
-  <header>     
-     <div>
-      <h1>Hi, I'm David!</h1>
-     </div>
-  </header>
-<div class="article-container">
-  <div class="imagenes-inferiores">
-        <a href="https://diprimm.itch.io/" target="_blank"> <img src="itch_icon.png" alt="Imagen itch"> </a>
-        <a href="" target="_blank"> <img src="https://blog.waalaxy.com/wp-content/uploads/2021/01/3-1.png" alt="Imagen 2"> </a>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<header class="site-nav">
+  <div class="wrap">
+    <div class="brand">David Cabrera<span>.</span></div>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#models-3d">3D Models</a></li>
+        <li><a href="#sprites-2d">2D Sprites</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-</div>
+</header>
 
-<p class="parrafos">
-  Hello!,  I'm David Cabrera. I'm a <strong style = "color: rgb(209, 61, 61);">VR Engineering & Game Design</strong> student specializing in PC games. My work lives at the intersection of programming and aesthetics, from coding game mechanics to creating
-  3D/pixel-art game assets, Simply put: I'm a <strong style = "color: rgb(209, 61, 61);">generalist</strong>.
-</p>
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Hello there, <em>Welcome to my portfolio.</em></h1>
+    <p class="lead">
+      I'm David Cabrera, a game designer. I work on mechanics,
+      3D modeling and 2D art. This portfolio holds my current projects
+      and keeps growing with every new prototype I finish.
+    </p>
+    <div class="cta-row">
+      <a href="#projects" class="btn btn-primary">View projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+    <div class="hero-tags">
+      <span class="chip">UNITY</span>
+      <span class="chip">BLENDER</span>
+      <span class="chip">ASEPRITE</span>
+      <span class="chip">GAME DESIGN</span>
+    </div>
+  </div>
+</section>
 
+<!-- ============================================================
+     PROYECTOS DE VIDEOJUEGO
+     Duplicate a full .cart block for each new project.
+     ============================================================ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Projects</div>
+        <h2>Video Games</h2>
+      </div>
+    </div>
 
-<!--
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="cart">
+        <div class="cart-media">
+          <img src="ArrowBANNER.png">
+        </div>
+        <div class="cart-body">
+          <h3>Arrow</h3>
+          <div class="cart-meta">
+            <span>Unity</span>
+            <span>Solo Dev</span>
+            <span>2025</span>
+          </div>
+          <p>
+            Arrow is a simple game of reflexes and coordination. Hit the pattern in the corresponding order to gain points. Be aware! sounds easy
+          but it can get caotic.
+          </p>
+          <div class="cart-links">
+            <a href="https://diprimm.itch.io/arrow">View on itch.io →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="cart">
+        <div class="cart-media">
+          <img src="ABTDbanner.png">
+        </div>
+        <div class="cart-body">
+          <h3>A bridge too dumb</h3>
+          <div class="cart-meta">
+            <span>Unity</span>
+            <span>Programmer & 3D Artist</span>
+            <span>2026</span>
+          </div>
+          <p>
+            A dumb fun game where you need to build a bridge from your island to the treasure island using the materials
+          available in your island. Play with your friends and have fun with the crazy physics and possible results.
+          </p>
+          <div class="cart-links">
+            <a href="#">Not available yet! →</a>
+          </div>
+        </div>
+      </article>
+
+       <!-- Project 3 -->
+      <article class="cart">
+        <div class="cart-media">
+          <img src="goshiBanner.png">
+        </div>
+        <div class="cart-body">
+          <h3>Goshi Goloshi</h3>
+          <div class="cart-meta">
+            <span>Unity</span>
+            <span>Programmer</span>
+            <span>2026</span>
+          </div>
+          <p>
+            Simple Hyper-Casual mobile videogame based on the classic Whack-a-Mole. Smash goshis and don't let them eat your launch!
+          </p>
+          <div class="cart-links">
+            <a href="#">Not available yet! →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MODELOS 3D
+     ============================================================ -->
+<section id="models-3d" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">3D Art</div>
+        <h2>3D Models</h2>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="arcade.png">
+        </div>
+        <div class="gallery-caption">
+          <h4>Arcade room</h4>
+          <span>Blender · Hard-surface practice</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="NauticGif.gif">
+        </div>
+        <div class="gallery-caption">
+          <h4>Diver</h4>
+          <span>Blender · Game character</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="mandalorian.png">
+        </div>
+        <div class="gallery-caption">
+          <h4>Mando Helmet</h4>
+          <span>Blender · Hard-surface practice</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="energysword.png">
+        </div>
+        <div class="gallery-caption">
+          <h4>Energy Sword</h4>
+          <span>Blender · Hard-surface practice</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="chibi_practice.png">
+        </div>
+        <div class="gallery-caption">
+          <h4>Chibi rig</h4>
+          <span>Blender · Retopo & Rigging practice</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="doom_diorama.png">
+        </div>
+        <div class="gallery-caption">
+          <h4>Doom diorama</h4>
+          <span>Blender · Study</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="GasLamp.png">
+        </div>
+        <div class="gallery-caption">
+          <h4>Old Ship Lamp</h4>
+          <span>Blender · Game prop</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="calabaza.png">
+        </div>
+        <div class="gallery-caption">
+          <h4>Pumpkin</h4>
+          <span>Blender · Practice</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="yagerrender.png">
+        </div>
+        <div class="gallery-caption">
+          <h4>Futuristic Mask</h4>
+          <span>Blender · Practice</span>
+        </div>
+      </div>
+      
       
 
- <div class="contenedor">
-    <div class="izquierda">
-      <img src="Larry.png" alt="Imagen circular" class="imagen-circular">
     </div>
-    <div class="derecha">
-      <div class="parrafos">
-        <p>David Cabrera</p>
-        <p>Unity developer</p>
-        <p>Specialized in PC games</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SPRITES 2D
+     ============================================================ -->
+<section id="sprites-2d">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">2D Art</div>
+        <h2>Sprites &amp; Pixel Art</h2>
       </div>
-      <div class="imagenes-inferiores">
-        <a href="https://diprimm.itch.io/" target="_blank"> <img src="itch_icon.png" alt="Imagen itch"> </a>
-        <a href="" target="_blank"> <img src="https://blog.waalaxy.com/wp-content/uploads/2021/01/3-1.png" alt="Imagen 2"> </a>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="archer.gif">
+        </div>
+        <div class="gallery-caption">
+          <h4>Archer</h4>
+          <span>Aseprite · Idle animation</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="lighter.gif">
+        </div>
+        <div class="gallery-caption">
+          <h4>Lighter</h4>
+          <span>Aseprite · Simple ligther animation</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="Timer.gif">
+        </div>
+        <div class="gallery-caption">
+          <h4>Timer</h4>
+          <span>Aseprite · UI element</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="Kaimi2.gif">
+        </div>
+        <div class="gallery-caption">
+          <h4>Kaimi</h4>
+          <span>Aseprite · UI element for Arrow</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="gallery-media">
+          <img src="Kaimi3.gif">
+        </div>
+        <div class="gallery-caption">
+          <h4>Kaimi</h4>
+          <span>Aseprite · UI element for Arrow</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     other stuff
+     ============================================================ -->
+<section id="other" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Other</div>
+        <h2>Other stuff</h2>
+
+    <div class="other-list">
+      <div class="other-item">
+        <h4>Shader</h4>
+        <span>Game Shader.</span>
       </div>
     </div>
   </div>
+</section>
 
-  -->
+<!-- ============================================================
+     SOBRE MÍ
+     ============================================================ -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Profile</div>
+        <h2>About Me</h2>
+      </div>
+    </div>
 
-  <main>
-  <section class="Projects">
-    <h1 class="title">Projects I worked on</h1>
-
-    <section class="container">
-      <div class="perfil">
-        <img src="ArrowBANNER.png"   alt="Tarjeta de juego Arrow" />
-        <h3>Arrow</h3>
+    <div class="about-grid">
+      <div class="about-text">
         <p>
-          Arrow is a simple game of reflexes and coordination. Hit the pattern in the corresponding order to gain points, be aware! sounds easy
-          but it can get caotic.
+          Hi, I'm David Cabrera. For now, the projects I worked on are mostly university projects besides Arrow and a few forgotten prototypes. I always liked the "old school vibes" of videogames so I'm very motivated to start making games with that feeling (mostly centered on graphical aspects).
+          
         </p>
-        <p>Role: Solo Dev</p>
-        <a href="https://diprimm.itch.io/arrow">
-          <button>View in Itch.io</button>
-        </a>       
-      </div>   
-    </section>
+        <p>
+          I currently study Virtual Reality Engineering and Digital Game Design at UBO University (Chile) and I am currently looking for professional internship.
+        </p>
 
-  </section>
-  </main>
-
-  <section id="experience">
-    <h1 class="title">My Knowledge</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Softwares</h2>
-          <div class="article-container">
-            <article>
-              <img src="unity_icon.png" alt="experience icon" class="icon" />
-              <div>
-                <h3>Unity</h3>
-                <P>Intermediate</P>
-              </div>
-            </article>
-            <article>
-              <img src="blender_icon.png" alt="experience icon" class="icon" />
-              <div>
-                <h3>Blender</h3>
-                <P>Intermediate</P>
-              </div>
-            </article>
-             <article>
-              <img src="PS_icon.png" alt="experience icon" class="icon" />
-              <div>
-                <h3>Photoshop</h3>
-                <P>Intermediate</P>
-              </div>
-            </article>
-            <article>
-              <img src="blockbench_icon.png" alt="experience icon" class="icon" />
-              <div>
-                <h3>Blockbench</h3>
-                <P>Beginner</P>
-              </div>
-            </article>
-            <article>
-              <img src="aseprite_icon.png" alt="experience icon" class="icon" />
-              <div>
-                <h3>Aseprite</h3>
-                <P>Beginner</P>
-              </div>
-            </article>
-                     
+        <div class="skills-block">
+          <h4>Design</h4>
+          <div class="chip-row">
+            <span class="chip">Game mechanics</span>
+            <span class="chip">Prototyping</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <h4>Tools</h4>
+          <div class="chip-row">
+            <span class="chip">Unity</span>
+            <span class="chip">Blender</span>
+            <span class="chip">Aseprite</span>
           </div>
         </div>
       </div>
+
+      <div class="about-photo">
+        Replace with your photo or avatar<br>(square or portrait works best)
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h1 class="title">Showcase</h1>           
- 
-      <h2 class="subtitle">Asset Gallery</h2>
-
-      <div class="galeria-showcase">
-
-        <div class="contenedor-imagen">
-          <img src="Timer.gif" alt="game asset"/>
-          <p>Timer for Arrow Game</p> 
-        </div>  
-      
-
-
-        <div class="contenedor-imagen">
-          <img src="star.gif" alt="game asset"/>
-          <p>Star Asser for Arrow game</p> 
-        </div>  
-
-
-
-       <div class="contenedor-imagen">
-         <img src="lighter.gif" alt="lighter 2d animation"/>
-         <p>Lighter 2D pixel-art animation</p> 
-        </div>
-
-
-      <div class="contenedor-imagen">
-         <img src="archer.gif" alt="archer 2d animation"/>
-         <p>Archer 2D pixel-art animation</p> 
+<!-- ============================================================
+     CONTACTO
+     ============================================================ -->
+<section id="contact" class="alt">
+  <div class="wrap">
+    <div class="contact-box">
+      <h2>Let's Talk</h2>
+      <p>Open to freelance projects, game jam collaborations,
+      and team opportunities.</p>
+      <div class="contact-links">
+        <span>Email: diprimmdev@gmail.com</span>      
+        <span>Discord: diprimm</span>
+        <p>
+         <a href="https://diprimm.itch.io/">itch.io</a>
+        </p>    
       </div>
+    </div>
+  </div>
+</section>
 
-      </div>
-      
-
-      <h2 class="subtitle">3D Gallery</h2>
-
-      <div class="galeria-showcase">
-        
-       <div class="contenedor-imagen">
-        <img src="mandalorian.png" alt="helmet render"/>
-        <p>Mandalorian helmet 3D model</p>
-        <div class="extra-images">
-          <img src="MandPr.png" alt="Process image">
-          </div> 
-       </div>
-
-       <div class="contenedor-imagen">
-        <img src="arcade.png" alt="arcade room"/>
-        <p>Arcade room 3D model</p>
-       </div>
-
-       <div class="contenedor-imagen">
-        <img src="yagerrender.png" alt="experience icon"/>
-        <p>Arcade room 3D model</p>
-          <div class="extra-images">
-          <img src="yagerWireframe.png" alt="mask wireframe">
-          </div> 
-       </div>
-        
-       <div class="contenedor-imagen">
-         <img src="energysword.png" alt="energy sword render"/>
-         <p>Halo energy sword 3D model</p> 
-       </div> 
-           
-       <div class="contenedor-imagen">
-        <img src="calabaza.png" alt="pumpkin render"/>
-        <p>Pumpkin 3D model</p> 
-       </div>
-
-        <div class="contenedor-imagen">
-        <img src="chibi_practice.png" alt="3d practice"/>
-        <p>Character armature practice</p>
-       </div>
-
-        <div class="contenedor-imagen">
-        <img src="doom_diorama.png" alt="doom diorama"/>
-        <p>Doom diorama 3D model</p> 
-       </div>
-
-       <div class="contenedor-imagen">
-        <img src="NauticRender1.png" alt="nautic"/>
-        <p>Diver</p>
-        
-        <div class="extra-images">
-          <img src="NauticGif.gif" alt="nautic gif">
-          <img src="Wireframe.png" alt="nautic wireframe">
-          
-        </div>
-
-       </div>
-
-      </div>
-
-    
-
-  </section>
-
-  <section >
-    <h1 class="endpage">Contact</h1>
-    <p class="endpage">Mail: diprimmdev@gmail.com</p>
-  </section>
-
-  <footer >
-    <p class="endpage">&copy; David Cabrera. Todos los derechos reservados.</p>
-  </footer> 
+<footer>
+  © 2026 David Cabrera. Built with HTML and CSS.
+</footer>
 
 </body>
 </html>
