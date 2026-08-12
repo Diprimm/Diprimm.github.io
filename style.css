@@ -266,6 +266,55 @@ section.alt{ background:var(--bg-alt); }
 }
 
 /* ============================================================
+   TECH CARDS
+   ============================================================ */
+.tech-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(380px, 1fr));
+  gap:28px;
+}
+.tech-card{
+  background:var(--surface);
+  border:1px solid var(--surface-line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  display:flex; flex-direction:column;
+  transition:border-color .2s ease;
+}
+.tech-card:hover{ border-color:var(--accent-2); }
+.tech-media{
+  aspect-ratio:16/9;
+  background:repeating-linear-gradient(45deg, #232335 0 10px, #1e1e2e 10px 20px);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--text-dim);
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.75rem;
+  text-align:center;
+  padding:16px;
+  border-bottom:1px solid var(--surface-line);
+  overflow:hidden;
+}
+.tech-media video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.tech-body{ padding:24px; display:flex; flex-direction:column; gap:10px; }
+.tech-body h4{ font-size:1.1rem; font-family:'Space Grotesk',sans-serif; font-weight:700; }
+.tech-tag{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.7rem;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  color:var(--accent-2);
+}
+.tech-body p{
+  color:var(--text-dim);
+  font-size:0.9rem;
+  line-height:1.65;
+}
+
+/* ============================================================
    OTRO
    ============================================================ */
 .other-list{
