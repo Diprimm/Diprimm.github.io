@@ -1,13 +1,13 @@
 :root{
-  --bg:            #12121b;
-  --bg-alt:        #191926;
-  --surface:       #1e1e2e;
-  --surface-line:  #2c2c40;
-  --text:          #eae8f2;
-  --text-dim:      #9c99b3;
-  --accent:        #ffb454;
-  --accent-2:      #7c9eff; 
-  --accent-3:      #ff6b6b; 
+  --bg:            #0d0d0d; 
+  --bg-alt:        #161413; 
+  --surface:       #1c1917; 
+  --surface-line:  #38241b; 
+  --text:          #ffffff; 
+  --text-dim:      #cccccc; 
+  --accent:        #ff8244; 
+  --accent-2:      #ffa040; 
+  --accent-3:      #ff2908; 
   --radius:        14px;
   --maxw:          1100px;
 }
@@ -17,13 +17,15 @@
 html{ scroll-behavior:smooth; }
 
 body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:'Inter', 'Segoe UI', system-ui, sans-serif;
-  line-height:1.6;
-  background-image:
-    radial-gradient(circle at 20% 10%, rgba(124,158,255,0.06), transparent 40%),
-    radial-gradient(circle at 85% 30%, rgba(255,180,84,0.05), transparent 45%);
+background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(255, 85, 0, 0.20), transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(255, 85, 0, 0.12), transparent 45%);
+  background-attachment: fixed;
 }
 
 h1,h2,h3{
@@ -38,6 +40,12 @@ a:hover{ text-decoration:underline; }
 img{ max-width:100%; display:block; }
 
 .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 24px; }
+
+.allerta-regular {
+  font-family: "Allerta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .eyebrow{
   font-family:'JetBrains Mono','Courier New',monospace;
