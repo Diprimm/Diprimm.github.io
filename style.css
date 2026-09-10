@@ -1,5 +1,5 @@
 :root{
-  --bg:            #0d0d0d; 
+  --bg:            #1a1a1b; 
   --bg-alt:        #161413; 
   --surface:       #1c1917; 
   --surface-line:  #38241b; 
@@ -323,6 +323,89 @@ section.alt{ background:var(--bg-alt); }
 }
 
 /* ============================================================
+   ACHIEVEMENTS & EVENTS
+   ============================================================ */
+.achv-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
+  gap:24px;
+}
+.achv-item{
+  background:var(--surface);
+  border:1px solid var(--surface-line);
+  border-left:3px solid var(--accent);
+  border-radius:var(--radius);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+.achv-media{
+  aspect-ratio:16/10;
+  background:repeating-linear-gradient(45deg, #232335 0 10px, #1e1e2e 10px 20px);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--text-dim);
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.7rem;
+  text-align:center;
+  padding:14px;
+  border-bottom:1px solid var(--surface-line);
+  overflow:hidden;
+}
+.achv-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  padding:0;
+}
+/* Variante para varias fotos en la misma tarjeta: agrega la clase
+   "achv-media--multi" al div y pon 2 o más <img> dentro. Se acomodan
+   solas en un mosaico, sin importar si son 2, 3 o 4 fotos. */
+.achv-media--multi{
+  aspect-ratio:auto;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-auto-rows:190px;
+  gap:3px;
+  padding:0;
+}
+.achv-media--multi img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.achv-body{ padding:22px; }
+.achv-date{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.7rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+.achv-item h4{
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:700;
+  font-size:1.05rem;
+  margin-top:8px;
+}
+.achv-item .achv-role{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.72rem;
+  color:var(--accent-2);
+  margin-top:2px;
+  display:block;
+}
+.achv-item p{
+  color:var(--text-dim);
+  font-size:0.9rem;
+  margin-top:10px;
+  margin-bottom:12px;
+}
+.achv-item a{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.8rem;
+}
+
+/* ============================================================
    OTRO
    ============================================================ */
 .other-list{
@@ -343,30 +426,7 @@ section.alt{ background:var(--bg-alt); }
    SOBRE MÍ
    ============================================================ */
 .about-grid{
-  display:grid;
-  grid-template-columns:1.1fr 0.9fr;
-  gap:56px;
-  align-items:start;
-}
-.about-photo{
-  aspect-ratio:4/5;
-  border-radius:var(--radius);
-  background:repeating-linear-gradient(45deg, #232335 0 10px, #1e1e2e 10px 20px);
-  border:1px solid var(--surface-line);
-  display:flex; align-items:center; justify-content:center;
-  color:var(--text-dim);
-  font-family:'JetBrains Mono',monospace;
-  font-size:0.75rem;
-  text-align:center;
-  padding:20px;
-  overflow:hidden;
-}
-.about-photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:var(--radius);
-  padding:0;
+  max-width:640px;
 }
 .about-text p{ color:var(--text-dim); margin-bottom:16px; }
 .skills-block{ margin-top:28px; }
@@ -379,10 +439,6 @@ section.alt{ background:var(--bg-alt); }
   margin-bottom:10px;
 }
 .skills-block .chip-row{ display:flex; flex-wrap:wrap; gap:8px; }
-
-@media (max-width:800px){
-  .about-grid{ grid-template-columns:1fr; }
-}
 
 /* ============================================================
    CONTACTO

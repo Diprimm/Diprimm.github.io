@@ -20,9 +20,10 @@
     <div class="brand">David Cabrera<span>.</span></div>
     <nav>
       <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#design-work">Design Work</a></li>
+        <li><a href="#projects">Projects</a></li>    
+        <!-- <li><a href="#design-work">Design Work</a></li> -->
         <li><a href="#programming">Gameplay Programming</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -81,8 +82,9 @@
             <span>2025</span>
           </div>
           <p>
-            Arrow is a simple game of reflexes and coordination. Hit the pattern in the corresponding order to gain points. Be aware! sounds easy
-          but it can get caotic.
+            Arrow is a simple game of reflexes and coordination. Hit the
+            pattern in the correct order to score points. Sounds easy —
+            but watch out, it can get chaotic fast.
           </p>
           <div class="cart-links">
             <a href="https://diprimm.itch.io/arrow">View on itch.io →</a>
@@ -102,8 +104,10 @@
             <span>2026</span>
           </div>
           <p>
-            A dumb fun game where you need to build a bridge from your island to the treasure island using the materials
-          available in your island. Play with your friends and have fun with the crazy physics and possible results.
+            A dumb, fun game where you need to build a bridge from your
+            island to the treasure island using the materials available on
+            it. Play with your friends and enjoy the crazy physics and
+            unpredictable results.
           </p>
           <div class="cart-links">
             <a href="https://yazminmartinez.itch.io/a-bridge-too-dumb">View on itch.io →</a>
@@ -123,7 +127,9 @@
             <span>2026</span>
           </div>
           <p>
-            Simple Hyper-Casual mobile videogame based on the classic Whack-a-Mole. Smash goshis and don't let them eat your launch!
+            A simple hyper-casual mobile game based on the classic
+            Whack-a-Mole. Smash the goshis and don't let them eat your
+            lunch!
           </p>
           <div class="cart-links">
             <a href="#">Not available yet! →</a>
@@ -134,6 +140,8 @@
     </div>
   </div>
 </section>
+
+
 
 <!-- ============================================================
      DESIGN WORK
@@ -210,13 +218,16 @@
           <h4>Arrow — Pattern &amp; Scoring System</h4>
           <span class="tech-tag">C# · Unity Input System</span>
           <p>
-            Goal: Reward precise, fast input without punishing small timing
-            errors too harshly.  
+            Goal: reward precise, fast input without punishing small timing
+            errors too harshly.
           </p>
           <p>
-            How it was built: Each pattern corresponds to a list of objects. Each object (arrow) contains an index indicating the direction it points.
-            The player's input also contains indices indicating the key pressed. If the arrow index and the input match, the first arrow in the list is considered pressed correctly.
-            The game then continues with the following arrows. The difficulty increases as more patterns are completed correctly.
+            How it was built: each pattern is a list of arrow objects, and
+            each arrow holds an index for the direction it points. The
+            player's input also maps to an index for the key pressed. When
+            the input matches the first arrow in the list, that arrow counts
+            as correctly pressed and the game moves on to the next one.
+            Difficulty increases as more patterns are completed successfully.
           </p>
         </div>
       </article>
@@ -231,11 +242,15 @@
           <h4>A Bridge Too Dumb — Object Freezing & Outline Shader</h4>
           <span class="tech-tag">C# · Runtime Physics & Shader</span>
           <p>
-            Goal: Let players build bridges in real time with visual feedback. 
+            Goal: let players build bridges in real time with visual
+            feedback.
           </p>
           <p>
-            How it was built: Used Rigidbody. When a object is too close
-            to another object they snap and freeze so it gives the ilusion that they are connected, when the object is able to snap, the outline is colored green to indicate it.
+            How it was built: using Rigidbody physics, when one object gets
+            close enough to another, they snap together and freeze in
+            place, creating the illusion that they're connected. While an
+            object is within snapping range, its outline turns green to
+            signal that it can be attached.
           </p>
         </div>
       </article>
@@ -250,17 +265,107 @@
           <h4>VortexGear — Ship movility mechanics test</h4>
           <span class="tech-tag">C# · Runtime Physics & Input System</span>
           <p>
-            Goal: Make ship controls mechanics and give a good game feel. 
+            Goal: build ship-control mechanics with a good game feel.
           </p>
           <p>
-            Basic and fast prototype. Used Rigidbody and New Input System. Some effects like a speed shader for full screen and camera shake
-            are to create a good feeling of speed.
+            How it was built: a quick, basic prototype using Rigidbody
+            physics and Unity's New Input System. Effects like a
+            full-screen speed shader and camera shake were added to sell
+            the feeling of speed.
           </p>
         </div>
       </article>
 
     </div>
 
+  </div>
+</section>
+
+<section id="achievements" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Recognition</div>
+        <h2>Achievements &amp; Events</h2>
+      </div>
+      <p>Game jams, competitions, and events I've taken part in.</p>
+    </div>
+
+    <div class="achv-grid">
+
+      <div class="achv-item">
+        <div class="achv-media">
+          <img src="RFL.jpg" alt="Team at the event">
+          <img src="RFL2.jpg" alt="laptop with the game on screen">
+        </div>
+        <div class="achv-body">
+          <span class="achv-date">2026</span>
+          <h4>Regenerative Futures Lab</h4>
+          <span class="achv-role">Role: Developer & Presenter</span>
+          <p>
+            A videogame showcase featuring "A Bridge Too Dumb". At this
+            event, we met several professionals in the field and got a lot
+            of valuable feedback on the game.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="achv-item">
+        <div class="achv-media achv-media--multi">
+          <img src="Festigame2024.jpg" alt="Team at the event">
+          <img src="Festi2024_2.jpg" alt="Team at the event">
+        </div>
+        <div class="achv-body">
+          <span class="achv-date">2024</span>
+          <h4>Festigame Chile 2024</h4>
+          <span class="achv-role"> Role: Exhibitor</span>
+          <p>
+            A crazy event. My team had the opportunity to exhibit "Meant to
+            Die" at Festigame 2024, on UBO's career stand. It was a
+            university project we'd worked on for a few months, and a lot
+            of people came to play it. The project is no longer in
+            development, but it was a great experience.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="achv-item">
+        <div class="achv-media achv-media--multi">
+          <img src="Expogame2023.jpg" alt="Presenting at Expogame 2023">
+          <img src="expo2023_2.jpg" alt="Presenting at Expogame 2023">
+        </div>
+        <div class="achv-body">
+          <span class="achv-date">2023</span>
+          <h4>Expogame Chile 2023</h4>
+          <span class="achv-role">Role: Exhibitor</span>
+          <p>
+            My first time exhibiting a game at an event. We showed the
+            first vertical slice of "Meant to Die", and a huge number of
+            people tried it out.
+          </p>
+        </div>
+      </div>
+
+      <div class="achv-item">
+        <div class="achv-media achv-media--multi">
+          <img src="GGJbanner.jpg" alt="Presenting at Expogame 2023">
+          <img src="Bubble.png" alt="Presenting at Expogame 2023">
+        </div>
+        <div class="achv-body">
+          <span class="achv-date">2024</span>
+          <h4>Global Game Jam 2024</h4>
+          <span class="achv-role">Role: Programmer</span>
+          <p>
+            My team and I submitted "Bubble Ascend" for Global Game Jam
+            2024. I programmed the game's main mechanic: creating wind
+            currents with mouse clicks.
+          </p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -279,11 +384,16 @@
     <div class="about-grid">
       <div class="about-text">
         <p>
-          Hi, I'm David Cabrera. For now, the projects I worked on are mostly university projects besides Arrow and a few forgotten prototypes. I always liked the "old school vibes" of videogames so I'm very motivated to start making games with that feeling.
-          
+          Hi, I'm David Cabrera. So far, most of the projects I've worked on
+          have been university projects, aside from Arrow and a few
+          forgotten prototypes. I've always loved the "old-school" feel of
+          classic videogames, and I'm motivated to start making games with
+          that same vibe.
         </p>
         <p>
-          I currently study Virtual Reality Engineering and Digital Game Design at UBO University (Chile) and I am currently looking for professional internship.
+          I'm currently studying Virtual Reality Engineering and Digital
+          Game Design at UBO University (Chile), and I'm looking for a
+          professional internship.
         </p>
 
         <div class="skills-block">
@@ -302,10 +412,6 @@
             <span class="chip">C#</span>
           </div>
         </div>
-      </div>
-
-      <div class="about-photo">
-        
       </div>
     </div>
   </div>
